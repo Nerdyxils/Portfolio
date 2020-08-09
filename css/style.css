@@ -7,7 +7,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-p {
+p, h2 {
     color: #8f8f8f;
     font-size: 1.5rem;
 }
@@ -86,16 +86,16 @@ p {
 }
 
 .about-text {
-    width: 65%;
+    width: 80%;
     line-height: 40px;
     margin-top: 70px;
 }
 
 .about-text .name {
-    font-size: 2.3rem;
+    font-size: 3.5rem;
     color: #ffffff;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .about-image {
@@ -111,3 +111,77 @@ p {
     margin: 50px 50px;
 }
 
+.projects {
+    padding: 150px 70px;
+}
+
+.project-header {
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #8f8f8f;
+}
+
+.project-sample {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.project-image {
+    width: 900px;
+    height: 400px;
+    background-color: #f3f1ef;
+}
+
+.project-image img {
+    margin: 50px 50px;
+    box-shadow: 0 4px 20px 0 #f3f1ef, 0 6px 20px 0 #f3f1ef;;
+}
+
+.project-description {
+    margin: 100px 10px;
+    line-height: 40px;
+}
+
+.project-description  h2 {
+    color: #000000;
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+.project-description button {
+    width: 200px;
+    height: 60px;
+    border: 0px;
+    border-radius: 50px 50px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    background-color: #1f3a93;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.skills {
+    position: relative;
+    background-color: #c4c4c4;
+    height: 600px;
+
+
+    background-image: url(../images/bg-stripes.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skills::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(4deg);
+    z-index: -1;
+}
