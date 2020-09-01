@@ -251,6 +251,17 @@ button {
     cursor: pointer;
 }
 
+.btn {
+    padding: 15px 15px;
+    border: 2px solid #00e6e4;
+    border-radius: 50px 50px;
+    font-size: 1.2rem;
+    background-color: #00e6e4;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 700;
+}
+
 .skills {
     position: relative;
     background-color: #c4c4c4;
