@@ -89,6 +89,14 @@ h1 {
     width: auto;
 }
 
+.nav_bar .mobile_icon {
+    display: none;
+}
+
+.mobile_nav {
+    display: none;
+}
+
 .about {
     display: grid;
     grid-template-columns: auto auto;
@@ -251,6 +259,7 @@ button {
 
     background-image: url(../images/bg-stripes.svg);
     background-position: center;
+    background-size: 600px 500px;
     background-repeat: no-repeat;
 }
 
@@ -365,6 +374,35 @@ button {
         font-size: 2rem;
     }
 
+    .mobile_nav {
+        display: none;
+        background-color: var(--Very_Dark_Violet);
+        width: 100%;
+        height: 350px;
+        text-transform: uppercase;
+    }
+
+    .mobile_nav a {
+        display: block;
+        color: var(--Very_Light_Gray);
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 28px 24px 12px  24px;
+        text-decoration: none;
+        color: #8f8f8f;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav_bar .mobile_icon {
+        height: 50px;
+        width: 50px;
+        display: block;
+    }
+
     .main-content {
         width: 100%;
         height: 1100px;
@@ -411,7 +449,7 @@ button {
     }
 
     .project-style {
-        height: 850px;
+        height: 650px;
     }
 
     .about-image {
