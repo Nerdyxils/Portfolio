@@ -120,6 +120,23 @@ h1 {
     margin: 50px 50px;
 }
 
+.project-t {
+    text-align: center;
+    color: #8f8f8f;
+    margin: 100px auto;
+}
+
+.project-t h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    margin: 30px, auto;
+}
+
+.project-t p {
+    font-size: 2rem;
+    line-height: 50px;
+}
+
 .projects {
     padding: 150px 70px;
 }
@@ -139,9 +156,12 @@ h1 {
     width: 900px;
     height: 400px;
     background-color: #f3f1ef;
+    margin: 50px auto;
 }
 
 .project-image img {
+    width: 808px;
+    height: 394px;
     margin: 50px 50px;
     box-shadow: 0 4px 20px 0 #f3f1ef, 0 6px 20px 0 #f3f1ef;
 }
@@ -155,6 +175,60 @@ h1 {
     color: #000000;
     font-size: 2.3rem;
     margin-bottom: 30px;
+}
+
+.status {
+    border: 2px solid #fafbfc;
+    border-top: 8px solid #1e8bc3;
+    border-radius: 10px;
+    background-color: #fafbfc;
+    width: 70%;
+    height: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.status-text {
+    line-height: 70px;
+    padding: 70px 100px;
+}
+
+.status-text h1 {
+    color: #1e8bc3;
+    font-size: 3rem;
+}
+
+.status-text h2 {
+    color: #000000;
+}
+
+.contact-form {
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 200px;
+}
+
+input[type=text], input[type=email]  {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    margin: 20px auto;
 }
 
 button {
@@ -283,9 +357,18 @@ button {
         text-align: center;
     }
 
+    p, a {
+        font-size: 1.2rem;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 2rem;
+    }
+
     .main-content {
         width: 100%;
         height: 1100px;
+        padding: 10px;
     }
 
     .skills {
@@ -308,13 +391,27 @@ button {
     .nav_bar, .about, .Me-section, 
     .contact-me, .skills, 
     .reserved-rights {
-        padding: 10px 10px;
+        padding: 0;
     }
 
     .about-text {
         width: 100%;
         text-align: left;
-        line-height: 50px;
+        line-height: 60px;
+    }
+
+    .project-t {
+        line-height: 100px;
+        text-align: left;
+        width: 90%;
+    }
+
+    .project-t p {
+        font-size: 1.2rem;
+    }
+
+    .project-style {
+        height: 850px;
     }
 
     .about-image {
@@ -330,26 +427,43 @@ button {
     }
 
     .project-image {
-        width: 350px;
-        height: 250px;
-        margin: 30px -40px;
+        width: 300px;
+        height: 200px;
+        margin: 30px auto;
     }
     
     .project-image img {
-        width: 300px;
-        height: 250px;
+        width: 250px;
+        height: 200px;
         margin: 25px 25px;
     }
 
     .projects {
-        padding: 70px 50px;
-
+        padding: 0px;
+        margin-top: 100px;
     }
 
-    .top-skills {
-        padding: 20px 20px;
+    .top-skills img {
+        padding: 50px;
+        margin: 0 auto;
     }
 
+    .status {
+        width: 90%;
+        margin: 150px auto;
+        text-align: center;
+    }
+    
+    .status-text {
+        line-height: 70px;
+        padding: 50px;
+    }
+
+    .contact-form {
+        text-align: center;
+        width: 90%;
+    }
+    
     .who-section, .Me-section {
         margin: 50px auto;
     }
@@ -360,9 +474,18 @@ button {
         border-right: none;
     }
 
+    .get-in {
+        margin-top: 40px;
+    }
+
     .social-icons {
         text-align: left;
-        margin: 0px auto;
+        margin: 70px auto;
+        line-height: 80px;
+    }
+
+    .reserved-rights {
+        padding: 20px;
     }
 }
 
