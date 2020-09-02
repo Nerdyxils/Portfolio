@@ -175,7 +175,7 @@ h1 {
 }
 
 .project-description {
-    margin: 100px 10px;
+    margin: 50px 20px;
     line-height: 40px;
 }
 
@@ -370,6 +370,11 @@ button {
     height: 100px;
     text-align: center;
     padding: 60px 50px;
+}
+
+small {
+    font-size: 0.5rem;
+    color: #ffffff;
 }
 
 @media (max-width: 1028px) {
