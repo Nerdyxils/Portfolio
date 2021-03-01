@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Catamaran:wght@500;700;900&display=swap');
 /* GENERAL STYLING START */
 * {
     padding: 0;
@@ -7,23 +7,40 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     font-size: 2.0rem;
+    font-family: 'Catamaran', sans-serif;
 }
 
-p, a{
+p, a {
     font-size: 1rem;
+    line-height: 1.5;
     text-decoration: none;
+    font-family: 'Arvo', serif;
 }
 
 .container {
-    padding: 6.5em 0 !important;
+    padding: 9.0em 0 !important;
     max-width: 1200px;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
+}
+
+button {
+    margin-top: 10px;
+    font-size: .8rem;
+    background-color: aqua;
+    border: 1px solid aqua;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
+.btn {
+    padding: .6em 3em;
+    border-radius: 50px 50px;
 }
 
 /* GENERAL STYLING END */
@@ -36,13 +53,27 @@ p, a{
     justify-content: space-between;
     max-width: 1200px;
     margin: 0px auto;
-    width: 80%;
+    width: 90%;
 }
 
-.logo img {
-    width: 60px;
-    height: 50px;
-    margin-top: 20px;
+.logo {
+    margin-top: 10px;
+}
+
+.col_log {
+    color: aqua;
+}
+
+.logo_link {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.logo_link:hover {
+    text-decoration: none;
+    color: aqua;
 }
 
 .nav-item {
@@ -94,6 +125,9 @@ p, a{
 }
 /* NAV BAR STYLING END */
 
+
+
+/* HERO SECTION STYLING START */
 .main-content {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.85) 100%), url(../images/image_bg.jpg);
     background-repeat: no-repeat;
@@ -101,49 +135,82 @@ p, a{
     background-size: cover;
     width: 100%;
     max-width: 100%;
-    height: 700px;
+    height: 900px;
 
     color: #ffffff;
     position: relative;
 
 }
 
-.main-content:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: inherit;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    transform-origin: top left;
-    transform: skewY(4deg);
-    z-index: -1;
-}
-
-
-
-.about {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.about-text {
-    width: 80%;
-    line-height: 40px;
-    margin-top: 70px;
-}
-
 .about-text .name {
     font-size: 3.5rem;
-    color: #ffffff;
     font-weight: 900;
-    margin-bottom: 30px;
+    line-height: 2.0;
 }
 
+.chat {
+    color: aqua;
+    border-bottom: 2px solid aqua;
+    text-decoration: none;
+}
 
+.chat:hover {
+    text-decoration: none;
+    color: #fff;
+}
+/* HERO SECTION STYLING END */
+
+
+/* ABOUT/SKILL SET STYLING START */
+.about_section {
+    text-align: center;
+    margin: 0 auto 100px auto;
+}
+
+.abt__text {
+    font-weight: 900;
+    border-bottom: 5px solid #000;
+    width: 15%;
+    margin: 0 auto;
+}
+
+.strength__skills {
+    text-align: center;
+}
+
+.strength__text {
+    margin-top: 20px;
+}
+
+.icon_img img {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.skillset {
+    margin: 100px auto;
+}
+
+.progress {
+    height: 30px;
+}
+
+.progress-bar h1 {
+    padding: 20px 0 10px 0;
+    font-weight: 900;
+    font-family: 'Arvo', serif;
+    font-size: 1rem;
+}
+
+.txt_bg {
+    background-color: #04c2c9;
+}
+
+.bg-info {
+    background-color: aqua;
+}
+
+/* ABOUT/SKILL SET STYLING END */
 
 
 
@@ -258,28 +325,7 @@ textarea {
     margin: 20px auto;
 }
 
-button {
-    width: 200px;
-    height: 60px;
-    border: 0px;
-    border-radius: 50px 50px;
-    margin-top: 30px;
-    font-size: 1.2rem;
-    background-color: #00e6e4;
-    color: #ffffff;
-    cursor: pointer;
-}
 
-.btn {
-    padding: 15px 15px;
-    border: 2px solid #00e6e4;
-    border-radius: 50px 50px;
-    font-size: 1.2rem;
-    background-color: #00e6e4;
-    color: #ffffff;
-    cursor: pointer;
-    font-weight: 700;
-}
 
 .skills {
     position: relative;
@@ -454,23 +500,17 @@ small {
         height: 700px;
     }
 
-    .about, .top-skills,
+    .top-skills,
     .Me-section, .project-sample,
     .contact-me, .projects {
         display: flex;
         flex-direction: column;
     }
 
-    .nav_bar, .about, .Me-section, 
+    .nav_bar, .Me-section, 
     .contact-me, .skills, 
     .reserved-rights {
         padding: 0;
-    }
-
-    .about-text {
-        width: 100%;
-        text-align: left;
-        line-height: 60px;
     }
 
     .project-t {
@@ -485,18 +525,6 @@ small {
 
     .project-style {
         height: 650px;
-    }
-
-    .about-image {
-        height: 300px;
-        width: 300px;
-        margin: 30px auto;
-    }
-    
-    .about-image img {
-        width: 250px;
-        height: 300px;
-        margin: 25px 20px;
     }
 
     .project-image {
