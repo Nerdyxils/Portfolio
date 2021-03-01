@@ -187,6 +187,20 @@ button {
     margin: 0 auto;
 }
 
+.skills_me {
+    text-align: center;
+}
+
+.img_dev img {
+    width: 40%;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.dev_txt {
+    margin-top: 20px;
+}
+
 .skillset {
     margin: 100px auto;
 }
@@ -210,213 +224,150 @@ button {
     background-color: aqua;
 }
 
+.skill_item {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .skill_item {
+        display: none;
+    }
+}
+
 /* ABOUT/SKILL SET STYLING END */
 
 
 
-.project-t {
-    text-align: center;
-    color: #8f8f8f;
-    margin: 100px auto;
-}
-
-.project-t h1 {
-    color: #ffffff;
-    font-size: 4rem;
-    margin: 30px, auto;
-}
-
-.project-t p {
-    font-size: 2rem;
-    line-height: 50px;
-}
-
+/* PROJECTS STYLING START */
 .projects {
-    padding: 150px 70px;
+    background-color: #eee;
 }
-
-.project-header {
-    font-family: 'Rubik', sans-serif;
-    margin-bottom: 40px;
-    border-bottom: 2px solid #8f8f8f;
-}
-
-.project-sample {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.project-image {
-    width: 900px;
-    height: 400px;
-    background-color: #f3f1ef;
-    margin: 50px auto;
-}
-
-.project-image img {
-    width: 808px;
-    height: 394px;
-    margin: 50px 50px;
-    box-shadow: 0 4px 20px 0 #f3f1ef, 0 6px 20px 0 #f3f1ef;
-}
-
-.project-description {
-    margin: 50px 20px;
-    line-height: 40px;
-}
-
-.project-description  h2 {
-    color: #000000;
-    font-size: 2.3rem;
-    margin-bottom: 30px;
-}
-
-.status {
-    border: 2px solid #fafbfc;
-    border-top: 8px solid #1e8bc3;
-    border-radius: 10px;
-    background-color: #fafbfc;
-    width: 70%;
-    height: 400px;
-    margin: 150px auto;
-    text-align: center;
-}
-
-.status-text {
-    line-height: 70px;
-    padding: 70px 100px;
-}
-
-.status-text h1 {
-    color: #1e8bc3;
-    font-size: 3rem;
-}
-
-.status-text h2 {
-    color: #000000;
-}
-
-.contact-form {
-    text-align: center;
-    width: 70%;
-    margin: 0px auto;
-    margin-bottom: 200px;
-}
-
-input[type=text], input[type=email]  {
-    width: 100%;
-    padding: 20px 20px;
-    margin: 20px 0;
-    box-sizing: border-box;
-    background-color: #f8f8f8;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-    margin: 20px auto;
-}
-
-
-
-.skills {
+.project_grid {
     position: relative;
-    background-color: #c4c4c4;
     width: 100%;
-    height: 600px;
-
-    background-image: url(../images/bg-stripes.svg);
-    background-position: center;
-    background-size: 600px 500px;
-    background-repeat: no-repeat;
 }
-
-.skills::after {
+  
+.image_project {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: inherit;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    bottom: 100%;
     left: 0;
-    transform-origin: top right;
-    transform: skewY(4deg);
-    z-index: -1;
-}
+    right: 0;
+    /* background-color: #fff; */
 
-.top-skills {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.85) 100%);
+    color: #000;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
 }
-
-.skills-text h2 {
-    border-bottom: 3px solid #ffffff;
-    color: #000000;
-    font-weight: 900;
+  
+.project_grid:hover .overlay {
+    bottom: 0;
+    height: 100%;
 }
-
-.top-skills img {
-    width: 300px;
-    height: 250px;
-    padding: 30px 50px;
-}
-
-.Me-section {
+  
+.text {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 100%;
-    padding: 50px 50px;
-    line-height: 50px;
-    margin: 100px 0px;
 }
 
-.who-section {
-    border-right: 3px solid #000000;
-    padding: 0px 20px;
+.text p {
+    color: #e31b6d;
 }
 
-.why-section {
-    padding: 0px 20px;
-}
-
-.contact-me {
-    position: relative;
-    background-color: #111111;
-    display: grid;
-    grid-template-columns: auto auto;
-    height: 400px;
-    width: 100%;
-    line-height: 50px;
-    justify-content: space-between;
-}
-
-.contact-me::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: inherit;
-    top: 0;
-    bottom: 0;
-    right: 0;
+.btn-outline-danger {
     left: 0;
-    transform-origin: top right;
-    transform: skewY(4deg);
-    z-index: -1;
+    position: absolute;
+    right: 0;
+    border: 2px solid #e31b6d;
+    font-size: 13pt;
+    margin: 0 auto;
+    padding: 7px 0;
+    width: 170px;
+    border-radius: 2px;
+    color: #e31b6d;
 }
 
-.social-icons a{
+.btn-outline-danger:hover {
+    background-color: #e31b6d;
+    color: #fff;
+}
+/* PROJECTS STYLING END */
+
+
+
+/* FOOTER/CONTACT-ME STYLING START */
+.footer {
+    background-color: #1b242f;
+}
+    
+    .footer_body, .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-links {
+        display: flex;
+    }
+    
+    .social-btn {
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        font-family: 'Titillium Web', sans-serif;
+        color: #333;
+        border-radius: 10px;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        background: white;
+        margin: 5px;
+        transition: 1s;
+    }
+    
+    .social-btn span {
+        width: 0px;
+        overflow: hidden;
+        transition: 1s;
+        text-align: center;
+    }
+    
+    .social-btn:hover {
+        width: 150px;
+        border-radius: 5px;
+    }
+    
+    .social-btn:hover span {
+        padding: 2px;
+        width: max-content;
+    }
+    
+    #twitter svg {
+        fill: #1da1f2;
+    }
+    
+    #linkedin svg {
+        fill: #0e76a8;
+    }
+    
+    #github {
+        fill: #333;
+    }
+
+/* .social-icons a{
     color: #8f8f8f;
 }
 
@@ -439,8 +390,10 @@ textarea {
 
 small {
     font-size: 0.5rem;
-    color: #ffffff;
-}
+    color: #ffffff; */
+
+
+/* FOOTER/CONTACT-ME STYLING START */
 
 @media (max-width: 1028px) {
     body {
