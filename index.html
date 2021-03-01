@@ -14,41 +14,42 @@
     </head>
     <body>
         <header class="main-content">
-            <div class="nav_bar" id="nav">
-                <div class="logo">
-                    <SILAS class="logo"><a href="index.html" class="logo_link"><span class="col_log"><</span><span class="col_log">/</span>SILAS<span class="col_log">></span></a></h1>
-                </div>
-                <ul class="nav-item">
-                    <li class="nav_link"><a href="index.html">Home</a></li>
-                    <li class="nav_link"><a href="#">About</a></li>
-                    <li class="nav_link"><a href="projects.html">Projects</a></li>
-                    <li class="nav_link"><a href="contact.html">Contact</a></li>
-                </ul>
+            <nav class="fixed-nav-bar">
+                <div class="nav_bar" id="nav">
+                    <div class="logo">
+                        <h1 class="logo"><a href="index.html" class="logo_link"><span class="col_log"><</span><span class="col_log">/</span>SILAS<span class="col_log">></span></a></h1>
+                    </div>
 
-                <ul class="nav-item mobile_nav" id="mymobilenav">
-                    <li class="nav_link"><a href="index.html">Home</a></li>
-                    <li class="nav_link"><a href="projects.html">Projects</a></li>
-                    <li class="nav_link"><a href="#skills">Skills</a></li>
-                    <li class="nav_link"><a href="contact.html">Contact</a></li>
-                </ul>
-                <img src="images/icon-hamburger.svg" class="mobile_icon" id="mobile_icon">
-            </div>
+                    <a class="show" href="#nav"><i class="fas fa-bars"></i></a><a class="hide" href="#hidemenu"><i class="far fa-window-close"></i></a>
+                    
+                    <div class="nav__menu">
+                        <div class="menu__main">
+                            <ul class="nav-item">
+                                <li class="nav_link"><a href="index.html">Home</a></li>
+                                <li class="nav_link"><a href="#about">About</a></li>
+                                <li class="nav_link"><a href="#projects">Projects</a></li>
+                                <li class="nav_link"><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
 
             <div class="about">
                 <div class="about-text container row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"  style="padding-left: 0;">
                         <h2 class="name"><span class="col_log">Hey!,</span> I'm Silas</h2>
                         <p>A Front-End developer who specializes in creating high quality, functional and modern web applications to help businesses and organizations 
                             get an exceptional global representation via internet using the most recent technologies. <br><br> I am enthusiastic about joining an organization that builds products that is aimed at solving a problem also an organization with a friendly working environment. 
                         </p>
-                        <a href="" class="chat">Want to chat?</a>
+                        <a class="chat mailtoui" href="mailto:silasabiodun25@gmail.com">Want to chat?</a>
                     </div>
                 </div>
             </div>
         </header>
 
 
-        <section class="about_skill_set">
+        <section class="about_skill_set" id="about">
            <div class="container">
 
                <div class="about_section">
@@ -176,7 +177,7 @@
         </section>
 
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="container">
                 <div class="about_section">
                     <h1 class="abt__text">PROJECTS</h1>
@@ -205,7 +206,7 @@
                                     <h2>Insure Landing Page</h2>
                                     <p>Html/Css/Js</p>
 
-                                    <button class="btn  btn-outline-danger">View Page</button>
+                                    <button class="btn  btn-outline-danger insure">View Page</button>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +247,7 @@
         </section>
 
 
-        <section class="footer">
+        <section class="footer" id="contact">
             <div class="container">
                 
                 <div class="footer_body">
@@ -278,5 +279,10 @@
 
 
         <script src="js/script.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mailtoui@[version]/dist/mailtoui-min.js"></script>
+        <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

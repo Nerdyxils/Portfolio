@@ -19,14 +19,14 @@ buttons.forEach(function(button){
 
 
 
-body.addEventListener('click', showNav);
-function showNav() {
-    if (mobileNav.style.display === 'none') {
+// body.addEventListener('click', showNav);
+// function showNav() {
+//     if (mobileNav.style.display === 'none') {
 
-        mobileNav.style.display = 'block';
-        mobileIcon.src = mobileIcon.src.replace('images/icon-hamburger.svg', 'images/icon-close.svg');
-    } else {
-        mobileNav.style.display = 'none';
-        mobileIcon.src = mobileIcon.src.replace('images/icon-close.svg', 'images/icon-hamburger.svg');
-    }
-}
+//         mobileNav.style.display = 'block';
+//         mobileIcon.src = mobileIcon.src.replace('images/icon-hamburger.svg', 'images/icon-close.svg');
+//     } else {
+//         mobileNav.style.display = 'none';
+//         mobileIcon.src = mobileIcon.src.replace('images/icon-close.svg', 'images/icon-hamburger.svg');
+//     }
+// }
