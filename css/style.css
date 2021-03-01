@@ -370,6 +370,23 @@ button {
         font-weight: 900;
         line-height: 1.5;
     } 
+
+    .text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text button {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .btn-outline-danger {
+        left: -20px;
+    }
+    .text h2 {
+        font-size: 1rem !important;
+    }
 }
 
 @media (max-width: 800px) {
