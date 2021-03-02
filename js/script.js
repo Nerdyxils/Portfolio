@@ -7,26 +7,24 @@ buttons.forEach(function(button){
     button.addEventListener('click', function(){
         if (button.classList.contains('insure')) {
             window.location = 'https://insure-landing-page-o74e276ud.vercel.app/';
-        } else if (button.classList.contains('fylo')) {
-            window.location = "https://fylo-landing-page-jly72g3ad.vercel.app/";
-        } else if (button.classList.contains('trackProject')) {
-            window.location = "https://project-tracking-h1fr2r2g8.vercel.app/";
-        } else if (button.classList.contains('signUp')) {
-            window.location = "https://intro-signup-page-i0bmtf18h.vercel.app/";
+        } else if (button.classList.contains('jayo')) {
+            window.location = "https://cto.jayo.one/";
+        } else if (button.classList.contains('instar')) {
+            window.location = "https://instar.io/";
+        } else if (button.classList.contains('zonkio')) {
+            window.location = "https://nerdyxils.github.io/project_LP/";
         };
     })
 });
 
+function twitter() {
+    window.location.href = "https://twitter.com/Timi_dev"
+};
+function linkedIn() {
+    window.location.href = "https://www.linkedin.com/in/abiodun-silas-timi/"
+};
+function gitHub() {
+    window.location.href = "https://github.com/Nerdyxils/"
+};
 
 
-// body.addEventListener('click', showNav);
-// function showNav() {
-//     if (mobileNav.style.display === 'none') {
-
-//         mobileNav.style.display = 'block';
-//         mobileIcon.src = mobileIcon.src.replace('images/icon-hamburger.svg', 'images/icon-close.svg');
-//     } else {
-//         mobileNav.style.display = 'none';
-//         mobileIcon.src = mobileIcon.src.replace('images/icon-close.svg', 'images/icon-hamburger.svg');
-//     }
-// }

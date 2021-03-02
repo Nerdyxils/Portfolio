@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Catamaran:wght@500;700;900&display=swap');
 /* GENERAL STYLING START */
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -423,6 +427,7 @@ a.sitename, a:visited.sitename {
         font-size: 2.5rem !important;
         color: #fff;
         font-weight: 900;
+        margin-left: 10px;
     }
 
     p, a {
@@ -468,7 +473,7 @@ a.sitename, a:visited.sitename {
 
 @media only screen and (max-width: 600px) {
     .fixed-nav-bar {
-        height: 70px;
+        height: 100px;
     }
 
     .nav_bar { 
@@ -491,7 +496,7 @@ a.sitename, a:visited.sitename {
         background-color: aqua;
         width: 100%;
         
-        margin-top: 70px;
+        margin-top: 65px;
         margin-left: auto;
         margin-right: auto;
         padding-left: 0;
@@ -518,7 +523,6 @@ a.sitename, a:visited.sitename {
       text-align: left;
       margin-top: 20px;
       line-height: 80px;
-      
     }
 
     .nav-item li>a {
@@ -558,9 +562,9 @@ a.sitename, a:visited.sitename {
 
     .show, .hide {  
       position: absolute;
-      top: 0;
+      top: -40px;
       right: 15px;
-      font-size: 14px;
+      font-size: 2rem !important;
     }
 
     .show {
