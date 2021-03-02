@@ -466,7 +466,7 @@ a.sitename, a:visited.sitename {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     .fixed-nav-bar {
         height: 70px;
     }
