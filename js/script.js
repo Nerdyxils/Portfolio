@@ -13,7 +13,11 @@ buttons.forEach(function(button){
             window.location = "https://instar.io/";
         } else if (button.classList.contains('zonkio')) {
             window.location = "https://nerdyxils.github.io/project_LP/";
-        };
+        }else if (button.classList.contains('TodoApp')) {
+          window.location = "https://nerdyxils.github.io/Todo_Application/";
+        }else if (button.classList.contains('FoodApp')) {
+          window.location = "https://nerdyxils.github.io/Food-App/";
+      };
     })
 });
 
