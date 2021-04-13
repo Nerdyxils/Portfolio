@@ -9,10 +9,12 @@ buttons.forEach(function(button){
             window.location = 'https://insure-landing-page-o74e276ud.vercel.app/';
         } else if (button.classList.contains('jayo')) {
             window.location = "https://cto.jayo.one/";
-        } else if (button.classList.contains('instar')) {
-            window.location = "https://instar.io/";
+        } else if (button.classList.contains('silitech')) {
+            window.location = "https://nerdyxils.github.io/Silitech/";
         } else if (button.classList.contains('zonkio')) {
             window.location = "https://nerdyxils.github.io/project_LP/";
+        }else if (button.classList.contains('manage')) {
+          window.location = "https://nerdyxils.github.io/Manage-Landing-Page/";
         }else if (button.classList.contains('TodoApp')) {
           window.location = "https://nerdyxils.github.io/Todo_Application/";
         }else if (button.classList.contains('FoodApp')) {

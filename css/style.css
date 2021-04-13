@@ -351,6 +351,10 @@ a.sitename, a:visited.sitename {
     text-align: center;
 }
 
+.overlay h2 {
+    font-size: 18px;
+}
+
 .text p {
     color: #e31b6d;
 }
@@ -360,11 +364,11 @@ a.sitename, a:visited.sitename {
     position: absolute;
     right: 0;
     border: 2px solid #e31b6d;
-    font-size: 13pt;
+    font-size: 13px;
     margin: 0 auto;
     padding: 7px 0;
-    width: 170px;
-    border-radius: 2px;
+    width: 120px;
+    border-radius: 5px;
     color: #e31b6d;
 }
 
